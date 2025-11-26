@@ -1,0 +1,52 @@
+# Dependencies
+node_modules
+**/node_modules
+
+# Build output
+dist/
+**/dist/
+
+# Generated docs
+src/adapters/openapi/docs/openapi.json
+**/src/adapters/openapi/docs/openapi.json
+
+# Scripts compiled (if generated)
+scripts/generate-openapi.js
+scripts/generate-openapi.js.map
+**/scripts/generate-openapi.js
+**/scripts/generate-openapi.js.map
+
+# Environment files
+.env
+.env.local
+.env.*
+**/.env
+**/.env.local
+**/.env.*
+
+# OS/editor junk
+.DS_Store
+**/.DS_Store
+.vscode/
+.idea/
+**/.vscode/
+**/.idea/
+
+# Logs & caches
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.eslintcache
+.cache/
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/pnpm-debug.log*
+**/.eslintcache
+**/.cache/
+
+# Prisma artifacts (legacy/custom)
+src/generated/prisma
+**/src/generated/prisma
+**/.prisma/
