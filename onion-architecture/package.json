@@ -1,0 +1,38 @@
+{
+  "name": "onion-architecture",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "prestart": "bash ./scripts/kill-port.sh 3000",
+    "start": "ts-node src/main.ts",
+    "predev": "bash ./scripts/kill-port.sh 3000",
+    "dev": "ts-node-dev --respawn --transpile-only src/main.ts",
+    "gen:openapi": "ts-node scripts/generate-openapi.ts",
+    "prisma:generate": "npx prisma generate",
+    "db:migrate": "npx prisma migrate dev --name init",
+    "db:push": "npx prisma db push"
+  },
+  "dependencies": {
+    "@prisma/adapter-mariadb": "^7.0.1",
+    "@prisma/client": "^7.0.1",
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "zod": "^4.1.13",
+    "swagger-ui-express": "^5.0.1",
+    "@asteasolutions/zod-to-openapi": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/express": "^4.17.25",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^20.19.25",
+    "prisma": "^7.0.1",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3",
+    "@types/swagger-ui-express": "^4.1.8"
+  }
+}
