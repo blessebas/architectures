@@ -6,7 +6,7 @@ import { PrismaUserRepository } from "../../../../users/adapters/outbound/prisma
 import { BcryptPasswordHasher } from "../../outbound/bcrypt.hasher";
 import { JwtTokenServiceImpl } from "../../outbound/jwt-token.service";
 import { CreateUser } from "../../../../users/application/use-cases/CreateUser";
-import { Login } from "../../../aplicacion/use-cases/Login";
+import { Login } from "../../../application/use-cases/Login";
 
 export const makeAuthRoutes = () => {
   const router = Router();

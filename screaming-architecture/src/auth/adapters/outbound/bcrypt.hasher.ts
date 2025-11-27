@@ -1,5 +1,5 @@
 import bcrypt from "bcrypt";
-import { PasswordHasher } from "../../dominio/puertos/PasswordHasher";
+import { PasswordHasher } from "../../domain/ports/PasswordHasher";
 
 export class BcryptPasswordHasher implements PasswordHasher {
   constructor(private rounds: number = 10) {}

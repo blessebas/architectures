@@ -1,5 +1,5 @@
 import jwt, { Secret, SignOptions } from "jsonwebtoken";
-import { TokenService } from "../../dominio/puertos/TokenService";
+import { TokenService } from "../../domain/ports/TokenService";
 
 export class JwtTokenServiceImpl implements TokenService {
   constructor(private secret: Secret, private expiresIn: string | number = "1h") {}

@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { Login } from "../../../aplicacion/use-cases/Login";
+import { Login } from "../../../application/use-cases/Login";
 import { CreateUser } from "../../../../users/application/use-cases/CreateUser";
 
 export class AuthController {
